@@ -9,6 +9,11 @@ function flattenRecursive(input) {
   return result
 }
 
+function flattenWithReduce(arr) {
+  return arr.reduce((accumulated, currentElement) => accumulated.concat(Array.isArray(currentElement) ? flattenWithReduce(currentElement) : currentElement), []);
+};
+
 module.exports = {
   flattenRecursive,
+  flattenWithReduce
 }
