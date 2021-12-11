@@ -1,4 +1,4 @@
-const { flattenRecursive } = require('.');
+const { flattenRecursive, flattenWithReduce } = require('.');
 
 describe('Flattening an array', () => {
 
@@ -7,6 +7,15 @@ describe('Flattening an array', () => {
       const array = [ 1, [ 2, [ 3 ] ], 4 ];
 
       const result = flattenRecursive(array);
+      const expectedResult = [1, 2, 3, 4];
+
+      expect(result).toEqual(expectedResult);
+    });
+
+    it('should expect the same result with a different approach', () => {
+      const array = [ 1, [ 2, [ 3 ] ], 4 ];
+
+      const result = flattenWithReduce(array);
       const expectedResult = [1, 2, 3, 4];
 
       expect(result).toEqual(expectedResult);
