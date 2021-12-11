@@ -1,0 +1,22 @@
+{
+  "name": "flatten-array-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMarinsa/flatten-array-kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMarinsa/flatten-array-kata/issues"
+  },
+  "homepage": "https://github.com/DMarinsa/flatten-array-kata#readme",
+  "dependencies": {
+    "jest": "^27.4.4"
+  }
+}
